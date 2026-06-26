@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+.dashboard-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.map-panel {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stats-panel {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Mempertahankan rasio aspek kanvas peta secara ketat */
+#map {
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    background-color: #eaeaea;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.slider-container {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#yearSlider {
+    width: 100%;
+    cursor: pointer;
+}
+
+.chart-container {
+    margin-top: 20px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
